@@ -1,0 +1,32 @@
+Execution logs
+[ERROR] [01/24/2022 22:00:18.902] [scruid-actor-system-akka.actor.default-dispatcher-5] [akka.stream.Log(akka://scruid-actor-system/system/StreamSupervisor-2)] [scruid-load-balancer] Upstream failed. (akka.stream.AbruptTerminationException: Processor actor [Actor[akka://scruid-actor-system/system/StreamSupervisor-2/flow-0-2-mapAsyncUnordered#-1636368671]] terminated abruptly)
+
+Job_end logs
+  "eid": "JOB_END",
+  "ets": 1643061618883,
+  "ver": "3.0",
+  "mid": "9FBC0C17DD415C41619E43602906D214",
+  "actor": {
+    "id": "",
+    "type": "System"
+  },
+  "context": {
+    "channel": "in.ekstep",
+    "pdata": {
+      "id": "AnalyticsDataPipeline",
+      "ver": "1.0",
+      "pid": "Sourcing Metrics Job"
+    },
+    "env": "analytics"
+  },
+  "edata": {
+    "data": {
+      "model": "Sourcing Metrics Job",
+      "statusMsg": "Tcp command [Connect(11.4.0.53:8082,None,List(),Some(10 seconds),true)] failed because of akka.io.TcpOutgoingConnection$$anon$2: Connect timeout of Some(10 seconds) expired"
+    },
+    "status": "FAILED",
+    "message": "Sourcing Metrics Job execution failed",
+    "class": "org.sunbird.analytics.job.SourcingMetrics",
+    "level": "INFO"
+  },
+  "@timestamp": "2022-01-24T22:00:18+00:00"
